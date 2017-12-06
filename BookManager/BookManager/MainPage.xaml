@@ -1,13 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BookManager"
+             NavigationPage.HasNavigationBar="false"
              x:Class="BookManager.MainPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+    
+    <NavigationPage Title="カメラ" Icon="camera_24.png">
+        <x:Arguments>
+            <!-- カメラぺージを表示 -->
+            <local:CameraPage />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="本棚" Icon="bookmark_24.png">
+        <x:Arguments>
+            <!-- 本棚ページを表示 -->
+            <local:BookPage />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="さがす" Icon="star_32.png">
+        <x:Arguments>
+            <!-- 本を探すページを表示 -->
+            <local:SeekPage/>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="設定" Icon="gear_24.png">
+        <x:Arguments>
+            <!-- 設定ページを表示 -->
+            <local:PropertyPage />
+        </x:Arguments>
+    </NavigationPage>
+
+
+    <NavigationPage Title="さがす" Icon="star_32.png">
+        <x:Arguments>
+            <local:DetailPage/>
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>
