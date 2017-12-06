@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using ZXing.Mobile;
-using ZXing.Net.Mobile.Forms;
+//using ZXing.Mobile;
+//using ZXing.Net.Mobile.Forms;
 
 namespace BookManager
 {
