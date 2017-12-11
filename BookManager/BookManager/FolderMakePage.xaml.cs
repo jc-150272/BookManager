@@ -16,5 +16,10 @@ namespace BookManager
         {
             InitializeComponent();
         }
+        
+        private void Storage(object sender, EventArgs e)
+        {
+
+        }
     }
 }
