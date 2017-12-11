@@ -4,7 +4,7 @@
              x:Class="BookManager.FolderMakePage"
              Title="フォルダ作成">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Padding="100">
             <Label Text="新規フォルダ作成"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
