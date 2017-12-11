@@ -17,6 +17,9 @@
             <!-- 本棚ページを表示 -->
             <local:BookPage />
         </x:Arguments>
+        <NavigationPage.ToolbarItems>
+            <ToolbarItem Text="フォルダ作成" Clicked="Folder"/>
+        </NavigationPage.ToolbarItems>
     </NavigationPage>
 
     <NavigationPage Title="さがす" Icon="star_32.png">

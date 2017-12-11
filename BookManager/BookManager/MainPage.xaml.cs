@@ -16,5 +16,10 @@ namespace BookManager
         {
             InitializeComponent();
         }
+
+        private void Folder(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new FolderMakePage());
+        }
     }
 }
