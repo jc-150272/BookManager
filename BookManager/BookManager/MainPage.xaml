@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:BookManager"
              NavigationPage.HasNavigationBar="false"
              x:Class="BookManager.MainPage">
-    
+
     <NavigationPage Title="カメラ" Icon="camera_24.png">
         <x:Arguments>
             <!-- カメラぺージを表示 -->
