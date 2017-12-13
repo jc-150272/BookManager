@@ -14,7 +14,16 @@ namespace BookManager
     {
         public BookPage()
         {
-            InitializeComponent();
+            ObservableCollection<Book> items = new ObservableCollection<Book>();
+            items.Add(new Book { Name = "John Doe" });
+            items.Add(new Book { Name = "Jane Doe" });
+            items.Add(new Book { Name = "Sammy Doe" });
+            BookListView.ItemsSource = items;
+        }
+
+        public class Book
+        {
+            public string Name { get; set; }
         }
     }
 }
