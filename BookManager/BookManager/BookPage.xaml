@@ -56,7 +56,7 @@
                             <!-- 読みたいボタンを表示 -->
                             <Image Source="blue_book_72.png" Grid.Row="2" Grid.Column="2"/>
                             <!-- 本の評価を表示-->
-                            <Image Source="star_test.gif" Grid.Row="2" Grid.Column="3"/>
+                            <Image Source="{Binding ValueImage}" Grid.Row="2" Grid.Column="3"/>
                         </Grid>
                     </StackLayout>
                 </ViewCell>
