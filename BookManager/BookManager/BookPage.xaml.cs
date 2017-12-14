@@ -22,59 +22,74 @@ namespace BookManager
             items.Add(new Book { Name = "Jane Doe" ,Value = 3.5 });
             items.Add(new Book { Name = "Sammy Doe" ,Value = 2.5});
 
-            if(Value <= 0.25)
+            for (var i = 0; i < items.Count; i++)
             {
-                ValueImage = "value_0.gif";
-            }
+                if (items[i].Value <= 0.25)
+                {
+                    items[i].ValueImage = "value_0.gif";
+                }
 
-            else if(Value <= 0.75)
-            {
-                ValueImage = "value_0.5.gif";
-            }
+                else if (items[i].Value <= 0.75)
+                {
+                    items[i].ValueImage = "value_0.5.gif";
+                }
 
-            else if (Value <= 0.125)
-            {
-                ValueImage = "value_1.gif";
-            }
+                else if (items[i].Value <= 1.25)
+                {
+                    items[i].ValueImage = "value_1.gif";
+                }
 
-            else if (Value <= 0.175)
-            {
-                ValueImage = "value_1.5.gif";
-            }
+                else if (items[i].Value <= 1.75)
+                {
+                    items[i].ValueImage = "value_1.5.gif";
+                }
 
-            else if (Value <= 0.225)
-            {
-                ValueImage = "value_2.gif";
-            }
+                else if (items[i].Value <= 2.25)
+                {
+                    items[i].ValueImage = "value_2.gif";
+                }
 
-            else if (Value <= 0.275)
-            {
-                ValueImage = "value_2.5.gif";
-            }
+                else if (items[i].Value <= 2.75)
+                {
+                    items[i].ValueImage = "value_2.5.gif";
+                }
 
-            else if (Value <= 0.325)
-            {
-                ValueImage = "value_3.gif";
-            }
+                else if (items[i].Value <= 3.25)
+                {
+                    items[i].ValueImage = "value_3.gif";
+                }
 
-            else if (Value <= 0.375)
-            {
-                ValueImage = "value_3.5.gif";
-            }
+                else if (items[i].Value <= 3.75)
+                {
+                    items[i].ValueImage = "value_3.5.gif";
+                }
 
-            else if (Value <= 0.425)
-            {
-                ValueImage = "value_4.gif";
-            }
+                else if (items[i].Value <= 4.25)
+                {
+                    items[i].ValueImage = "value_4.gif";
+                }
 
-            else if (Value <= 0.475)
-            {
-                ValueImage = "value_4.5.gif";
-            }
+                else if (items[i].Value <= 4.75)
+                {
+                    items[i].ValueImage = "value_4.5.gif";
+                }
 
-            else 
-            {
-                ValueImage = "value_5.gif";
+                else
+                {
+                    items[i].ValueImage = "value_5.gif";
+                }
+
+
+                if (items[i].RedStar == true)
+                {
+                    items[i].RedStar2 = "red_star_72.png";
+                }
+
+                if (items[i].BlueBook == true)
+                {
+                    items[i].BlueBook2 = "blue_book_72.png";
+                }
+
             }
 
             BookListView.ItemsSource = items;
@@ -88,6 +103,15 @@ namespace BookManager
             public double Value { get; set; }
 
             public string ValueImage { get; set; }
+
+            public bool RedStar { get; set; }
+
+            public string RedStar2 { get; set; }
+
+            public bool BlueBook { get; set; }
+
+            public string BlueBook2 { get; set; }
+
         }
     }
 }
