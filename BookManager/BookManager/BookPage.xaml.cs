@@ -96,6 +96,11 @@ namespace BookManager
 
         }
 
+        private void Detail(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new DetailPage());
+        }
+
         public class Book
         {
             public string Name { get; set; }
