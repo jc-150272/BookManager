@@ -96,10 +96,6 @@ namespace BookManager
 
         }
 
-        private void ListView_ItemTapped(object sender, SelectedItemChangedEventArgs e)
-        {
-            DisplayAlert("Item Selected", e.SelectedItem.ToString(), "Ok");
-        }
 
         public class Book
         {
@@ -120,5 +116,11 @@ namespace BookManager
             public string BlueBook2 { get; set; }
 
         }
-    }
+
+        private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            string x = e.SelectedItem.ToString();
+            Navigation.PushAsync(new DetailPage(x));
+        }
+        }
 }

@@ -18,9 +18,14 @@ namespace BookManager
         bool hantei2 = true;
         bool hantei3 = true;
 
-        public DetailPage(int Name)
+        public DetailPage()
         {
             InitializeComponent();
+        }
+
+        public DetailPage(string x)
+        {
+            string BookName = x; 
         }
 
         // 読みたいボタンを点滅させる
