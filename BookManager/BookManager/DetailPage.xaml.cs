@@ -18,7 +18,7 @@ namespace BookManager
         bool hantei2 = true;
         bool hantei3 = true;
 
-        public DetailPage()
+        public DetailPage(int Name)
         {
             InitializeComponent();
         }

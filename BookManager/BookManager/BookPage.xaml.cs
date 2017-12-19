@@ -18,9 +18,9 @@ namespace BookManager
             InitializeComponent();
 
             ObservableCollection<Book> items = new ObservableCollection<Book>();
-            items.Add(new Book { Name = "John Doe" ,Value = 4.0 });
-            items.Add(new Book { Name = "Jane Doe" ,Value = 3.5 });
-            items.Add(new Book { Name = "Sammy Doe" ,Value = 2.5});
+            items.Add(new Book { Name = "John Doe" ,Value = 4.0,BlueBook = true,RedStar = true });
+            items.Add(new Book { Name = "Jane Doe" ,Value = 3.5,BlueBook = true,RedStar = false });
+            items.Add(new Book { Name = "Sammy Doe" ,Value = 2.5,BlueBook = false,RedStar = false });
 
             for (var i = 0; i < items.Count; i++)
             {
@@ -96,13 +96,15 @@ namespace BookManager
 
         }
 
-        private void Detail(object sender, EventArgs e)
+        private void ListView_ItemTapped(object sender, SelectedItemChangedEventArgs e)
         {
-            Navigation.PushAsync(new DetailPage());
+            DisplayAlert("Item Selected", e.SelectedItem.ToString(), "Ok");
         }
 
         public class Book
         {
+            public int ISBN { get; set; }
+
             public string Name { get; set; }
 
             public double Value { get; set; }

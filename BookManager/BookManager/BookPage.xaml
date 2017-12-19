@@ -4,12 +4,12 @@
              x:Class="BookManager.BookPage"
              Title="本棚">
     
-    <ListView x:Name="BookListView" RowHeight="100">
+    <ListView x:Name="BookListView" RowHeight="100" ItemSelected="ListView_ItemTapped">
         <ListView.ItemTemplate>
             <DataTemplate>
 
                 <!-- セルをカスタマイズ-->
-                <ViewCell Tapped="Detail">
+                <ViewCell>
 
                     <!-- レイアウトを水平方向に表示-->
                     <StackLayout Orientation="Horizontal">
