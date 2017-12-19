@@ -4,7 +4,7 @@
              x:Class="BookManager.BookPage"
              Title="本棚">
     
-    <ListView x:Name="BookListView" RowHeight="100" SelectedItem="OnItemSelected">
+    <ListView x:Name="BookListView" RowHeight="100" ItemSelected="OnItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
 

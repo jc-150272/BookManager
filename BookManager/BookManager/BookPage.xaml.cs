@@ -21,7 +21,7 @@ namespace BookManager
             items.Add(new Book { Name = "John Doe" ,Value = 4.0,BlueBook = true,RedStar = true });
             items.Add(new Book { Name = "Jane Doe" ,Value = 3.5,BlueBook = true,RedStar = false });
             items.Add(new Book { Name = "Sammy Doe" ,Value = 2.5,BlueBook = false,RedStar = false });
-
+            
             for (var i = 0; i < items.Count; i++)
             {
                 if (items[i].Value <= 0.25)
@@ -119,7 +119,7 @@ namespace BookManager
 
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            string x = e.SelectedItem.ToString();
+            string x = BookListView.SelectedItem.ToString();
             Navigation.PushAsync(new DetailPage(x));
         }
         }
