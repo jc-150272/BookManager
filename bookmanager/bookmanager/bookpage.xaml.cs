@@ -116,5 +116,7 @@ namespace BookManager
             public string BlueBook2 { get; set; }
 
         }
+
+
         }
 }
