@@ -10,6 +10,7 @@ using Xamarin.Forms;
 
 namespace BookManager
 {
+    
     public partial class MainPage : TabbedPage
     {
         public MainPage()
@@ -22,4 +23,5 @@ namespace BookManager
             Navigation.PushAsync(new FolderMakePage());
         }
     }
+    
 }
