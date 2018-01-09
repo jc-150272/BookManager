@@ -18,7 +18,6 @@ namespace BookManager
             App.dbPath = dbPath;
             InitializeComponent();
             MainPage = new BookManager.MainPage();
-
         }
 
         public App()

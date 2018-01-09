@@ -21,8 +21,7 @@ namespace BookManager
         public DetailPage(string x)
         {
             InitializeComponent();
-
-            string BookName = x; 
+            string BookName = x;
         }
 
         // 読みたいボタンを点滅させる

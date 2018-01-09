@@ -117,10 +117,8 @@ namespace BookManager
 
         }
 
-        private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            string x = BookListView.SelectedItem.ToString();
-            Navigation.PushAsync(new DetailPage(x));
+        void OnTap(object sender, ItemTappedEventArgs e) { 
+            DisplayAlert("Item Tapped", e.Item.ToString(), "Ok");
         }
         }
 }
