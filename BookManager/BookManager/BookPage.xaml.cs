@@ -24,10 +24,6 @@ namespace BookManager
             
             for (var i = 0; i < items.Count; i++)
             {
-                try
-                {
-
-                
                 if (items[i].Value <= 0.25)
                 {
                     items[i].ValueImage = "value_0.gif";
@@ -93,11 +89,6 @@ namespace BookManager
                 {
                     items[i].BlueBook2 = "blue_book_72.png";
                 }
-                }
-                catch (Exception e)
-                {
-                    DisplayAlert("警告", e.ToString(), "OK");
-                }
 
             }
 
@@ -125,5 +116,7 @@ namespace BookManager
             public string BlueBook2 { get; set; }
 
         }
+
+
         }
 }
